@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ЭРГА</title>
+    <link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body class="pageWrapper">
@@ -70,8 +71,54 @@
         </div>
     </div>
 </div>
+<div class="container">
+<div class="block_three">
+    <div class="bg_over"></div>
+        <a href="#" class="box_animation one" data-img-bg="img/block_three/sepatator.png">
+            <div class="border"></div>
+            <span>ПРОДУКЦИЯ</span>
+        </a>
 
+        <a href="#" class="box_animation two" data-img-bg="img/block_three/sepatator.png">
+            <div class="border"></div>
+            <span>Сепараторы</span>
+        </a>
 
+        <a href="#" class="box_animation three" data-img-bg="img/block_three/erguard.png">
+            <div class="border"></div>
+            <span>ERGUARD</span>
+        </a>
+
+        <a href="#" class="box_animation four">
+            <div class="border"></div>
+            <span>Армаг</span>
+        </a>
+        <a href="#" class="box_animation five">
+            <div class="border"></div>
+            <span>Линии</span>
+        </a>
+
+        <a href="#" class="box_animation six">
+            <div class="border"></div>
+            <span>Лабораторное <br> оборудование</span>
+        </a>
+
+        <a href="#" class="box_animation seven">
+            <div class="border"></div>
+            <span>Вэлма</span>
+        </a>
+
+        <a href="#" class="box_animation eight">
+            <div class="border"></div>
+            <span>Магнитные системы</span>
+        </a>
+
+        <a href="#" class="box_animation nine">
+            <div class="border"></div>
+            <span>Доп. Оборудование</span>
+        </a>
+    </div>
+</div>
 <?php require_once "footer.php"?>
 
 <script src="js/jquery.scrollify.js"></script>
@@ -126,6 +173,24 @@
             });
         }
     });*/
+
+    $(".block_three").mouseover(function(event){
+
+        var imgIn = $(event.target).parent('a').attr('data-img-bg');
+
+        $(".bg_over").css("background","url("+imgIn+")")
+            .addClass('pulse')
+            .addClass('animated');
+
+        console.log(imgIn);
+    });
+
+    $(".block_three .box_animation").mouseleave(function() {
+        var imgIn = $(event.target).parent('a').attr('data-img-bg');
+            $(".bg_over").css("background","")
+                .removeClass('pulse')
+                .removeClass('animated');
+        });
 
     $('.headerSlider').slick({
         dots: true,

@@ -182,4 +182,96 @@ header{
   font-size: 1.7rem;
   margin-top: 3rem;
 }
+.block_three{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  position: relative;
+}
 
+.bg_over{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover!important;
+  background-repeat:no-repeat!important;
+}
+
+
+.box_animation{
+  width: 27.14rem;
+  height: 17.14rem;
+  background: #182c4f;
+  margin: .4rem;
+  position: relative;
+  background-size: cover!important;
+  transition: all .8s;
+}
+
+.box_animation span{
+  position: absolute;
+  bottom: 1.2rem;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 1.2rem;
+  color: $white;
+  font-family: CyrMedium,Arial;
+}
+
+.block_three .two{
+  background: url("../img/block_three/sepatator.png") 0 0 no-repeat;
+}
+
+.block_three .three{
+  background: url("../img/block_three/erguard.png") 0 0 no-repeat;
+}
+
+.block_three .four{
+  background: url("../img/block_three/armat.png") 0 0 no-repeat;
+}
+
+.block_three .five{
+  background: url("../img/block_three/line.png") 0 0 no-repeat;
+}
+
+.block_three .six{
+  background: url("../img/block_three/lab_eng.png") 0 0 no-repeat;
+}
+
+
+.block_three .seven{
+  background: url("../img/block_three/velma.png") 0 0 no-repeat;
+}
+
+.block_three .eight{
+   background: url("../img/block_three/mag_s.png") 0 0 no-repeat;
+ }
+
+.block_three .nine{
+  background: url("../img/block_three/dop_oporud.png") 0 0 no-repeat;
+}
+
+.block_three:hover .box_animation{
+  background:none;
+}
+
+.box_animation:hover{
+  background: #182c4f!important;
+}
+.block_three .border{
+  position: absolute;
+  border: 1px solid #ffffff;
+  left: -1px;
+  top: 0px;
+  right: 0px;
+  bottom: -1px;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 2;
+}
+
+.block_three:hover .border{
+  opacity: 1;
+}
