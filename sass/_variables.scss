@@ -1,3 +1,22 @@
-$black : black;
+@font-face {
+  font-family: CyrRoma; /* Имя шрифта */
+  src: url(../fonts/HelveticaNeueCyr-Roma.otf);
+}
 
-$red : red;
+@font-face {
+  font-family: CyrMedium; /* Имя шрифта */
+  src: url(../fonts/HelveticaNeueCyr-Medium.ttf);
+}
+
+@font-face {
+  font-family: CyrLight; /* Имя шрифта */
+  src: url(../fonts/HelveticaNeueCyr-Light.ttf);
+}
+
+$black     : black;
+
+$red       : red;
+
+$white     : #fffefe;
+
+$linkColor : #3c3939;

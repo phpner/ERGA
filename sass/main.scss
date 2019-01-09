@@ -1,5 +1,4 @@
 @import "../node_modules/normalize.css/normalize";
-@import "_bootstrap-grid.min.scss";
 
 /*----variables---*/
 @import "_variables.scss";
@@ -8,8 +7,8 @@
 @import "lib/magnific-popup";
 
 /*----carousel----*/
-@import "lib/owl.carousel";
-@import "lib/owl.theme.default";
+@import "lib/slick";
+@import "lib/slick-theme";
 
 /*---menu---*/
 @import "_menu.scss";
@@ -19,8 +18,40 @@
 
 /*----media---*/
 @import "_media.scss";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 14px;
+  letter-spacing: 1.4px;
+}
+h2{
+  font-size: 2rem;
+  font-family: CyrMedium,Arial;
+  flex: 100%;
+}
+.wrapper{
+  display: flex;
+  flex-flow: row wrap;
+}
+.f-nav{
+  position: fixed !important;
+  z-index: 999;
+  height: 114px;
+  background: #f7fdff;
+  overflow: hidden;
+  box-shadow: 0px 4px 7px 1px rgba(146, 146, 146, 0.33);
+  width: 100%;
+}
 
+.f-nav .top_header {
+  height: 114px;
+}
+.bg_wight{
 
+}
 #answers{
   position: fixed;
   left: 0;
@@ -47,6 +78,108 @@
   font-weight: bold;
 }
 
+.container{
+  max-width: 1500px;
+  padding: 30px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+header{
+  position: relative;
+  min-height: 850px;
+}
 
+.pane-container{
+  height: 850px;
+}
 
+.top_header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.top_header.container{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.top_header .logo{
+  position: relative;
+  z-index: 999;
+}
+
+.headerSlider .item{
+  width: 100vw;
+  height: 850px;
+  position: relative;
+}
+.headerSlider img {
+  width: 100%;
+  height: 100%;
+}
+.pane{
+  height: 100vh;
+  width: 100%;
+}
+
+.top_menu li .active{
+  background: red;
+  padding: 20px;
+
+}
+.video_box video{
+  cursor: pointer;
+}
+
+*::-webkit-media-controls-panel {
+  opacity: 0;
+}
+
+.video_box:hover *::-webkit-media-controls-panel{
+  opacity: 1;
+}
+
+.pan_one .box{
+  width: 50%;
+  padding: 30px 30px 0 0;
+  font-size: 1.2rem;
+  font-family: CyrRoma;
+}
+.pan_one h2 {
+  color: #285bc1;
+  margin-top: 40px;
+}
+
+.block_two{
+  background: url("../img/bg_serves.png")0 0 no-repeat;
+  background-size: cover;
+}
+
+.block_two h2{
+  text-align: center;
+  color: $white;
+  margin: 3.5rem 0;
+}
+
+.block_two .wrapper{
+  justify-content: space-between;
+}
+
+.block_two .wrapper .box{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+}
+.block_two .wrapper .box img{
+  width: 141px;
+  height: 141px;
+}
+.block_two .wrapper .box span{
+  color: $white;
+  font-size: 1.7rem;
+  margin-top: 3rem;
+}
 
