@@ -103,7 +103,6 @@
     border-right: 3px solid white;
     border-bottom: 3px solid white;
     transform: rotate(140deg);
-
 }
 
 .headerSlider  .slick-prev:before
@@ -174,6 +173,7 @@
 
     text-align: center;
 }
+
 // main page
 .headerSlider .slick-dots{
     bottom: 55px;
@@ -258,8 +258,36 @@
 
 // main page
 .headerSlider .slick-dots li.slick-active button:before{
-    border: 2px solid #fff;
+    border: 2px solid #0d3785;
     border-radius: 50%;
     color: red;
     opacity: 1;
+}
+
+
+// block_four
+
+.block_four .slick-dots li button:before{
+    font-size: 18px;
+    color: #0d3785;
+    opacity: 1;
+    padding: 2px;
+    width: 18px;
+    height: 18px;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
+.block_four .slick-dots li.slick-active button:before{
+    border: 2px solid #0d3785;
+    border-radius: 50%;
+    color: red;
+    opacity: 1;
+}
+
+.block_four .slick-dots{
+    bottom: -198px;
 }

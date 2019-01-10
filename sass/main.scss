@@ -27,6 +27,10 @@ body{
   font-size: 14px;
   letter-spacing: 1.4px;
 }
+.fack{
+  width: 90vw;
+  height: 100vh;
+}
 h2{
   font-size: 2rem;
   font-family: CyrMedium,Arial;
@@ -144,20 +148,24 @@ header{
   text-align: center;
   align-items: center;
   margin-left: 60px;
+  color: $white;
+  font-family: CyrMedium,Arial;
+  text-transform: uppercase;
 }
 .headerSlider .item .crug .in_grug{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   background: #a80000;
   border-radius:50%;
   padding: 30px;
   text-align: center;
   color: $white;
   font-family: CyrMedium,Arial;
+  margin-bottom: 20px;
 }
 .headerSlider .item .crug .in_grug b{
   font-weight: 900;
@@ -220,7 +228,6 @@ header{
   flex-direction: column;
   text-align: center;
   align-items: center;
-
 }
 .block_two .wrapper .box img{
   width: 141px;
@@ -264,7 +271,7 @@ header{
   bottom: 1.2rem;
   left: 50%;
   transform: translate(-50%);
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: $white;
   font-family: CyrMedium,Arial;
 }
@@ -323,4 +330,50 @@ header{
 
 .block_three:hover .border{
   opacity: 1;
+}
+
+.block_four{
+  position: relative;
+}
+
+.block_four .bg{
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  background: #182c4f;
+}
+
+.block_four .bg:after{
+  content: '';
+  height: 100%;
+  width: 420px;
+  background: #182c4f;
+  position: absolute;
+  right: -190px;
+  transform: skewX(35deg);
+}
+
+.block_four .container{
+  padding: 7.14rem 0;
+}
+
+.block_four .sliderInPage .item .box{
+  display: flex;
+}
+
+.block_four .sliderInPage .item .text_in_slider{
+  flex-basis: 50%;
+}
+
+.block_four .sliderInPage .item .text_in_slider h3{
+  color: $white;
+  margin-bottom: 60px;
+  font-size: 2rem;
+  font-family: CyrMedium,Arial;
+}
+
+.block_four .sliderInPage .item .text_in_slider p{
+  color: $white;
+  font-size: 1.4rem;
+  font-family: CyrMedium,Arial;
 }

@@ -153,6 +153,84 @@
         </a>
     </div>
 </div>
+
+<div class="block_four">
+    <div class="bg"></div>
+    <div class="container">
+        <div class="sliderInPage">
+            <div class="item">
+                <div class="box">
+                    <div class="text_in_slider">
+                        <h3>Автоматический магнитный <br>
+                            сепаратор серии АСМК</h3>
+                        <p>
+                            Научно-производственное объединение
+                            «ЭРГА» ведёт свою историю с 1991 года,
+                            когда Котуновым В.В. было создано
+                            специализированное предприятие по п
+                            роизводству постоянных редкоземельных
+                            магнитов
+                        </p>
+                    </div>
+                    <img src="img/АСМК.png" alt="АСМК">
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="text_in_slider">
+                        <h3>Автоматический магнитный <br>
+                            сепаратор серии АСМК</h3>
+                        <p>
+                            Научно-производственное объединение
+                            «ЭРГА» ведёт свою историю с 1991 года,
+                            когда Котуновым В.В. было создано
+                            специализированное предприятие по п
+                            роизводству постоянных редкоземельных
+                            магнитов
+                        </p>
+                    </div>
+                    <img src="img/АСМК.png" alt="АСМК">
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="text_in_slider">
+                        <h3>Автоматический магнитный <br>
+                            сепаратор серии АСМК</h3>
+                        <p>
+                            Научно-производственное объединение
+                            «ЭРГА» ведёт свою историю с 1991 года,
+                            когда Котуновым В.В. было создано
+                            специализированное предприятие по п
+                            роизводству постоянных редкоземельных
+                            магнитов
+                        </p>
+                    </div>
+                    <img src="img/АСМК.png" alt="АСМК">
+                </div>
+            </div>
+            <div class="item">
+                <div class="box">
+                    <div class="text_in_slider">
+                        <h3>Автоматический магнитный <br>
+                            сепаратор серии АСМК</h3>
+                        <p>
+                            Научно-производственное объединение
+                            «ЭРГА» ведёт свою историю с 1991 года,
+                            когда Котуновым В.В. было создано
+                            специализированное предприятие по п
+                            роизводству постоянных редкоземельных
+                            магнитов
+                        </p>
+                    </div>
+                    <img src="img/АСМК.png" alt="АСМК">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fack"></div>
 <?php require_once "footer.php"?>
 
 <script src="js/jquery.scrollify.js"></script>
@@ -245,6 +323,15 @@
         slidesToShow: 1,
         adaptiveHeight: true
     });
+
+$('.sliderInPage').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    arrows:false
+});
 </script>
 </body>
 </html>
