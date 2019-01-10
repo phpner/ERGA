@@ -108,8 +108,18 @@ $(document).ready(function ($) {
         }
     });
 
-$(".video_box video").on("click",function(){
-    console.log(this);
-    this.play();
-})
+    $(".video_box video").on("click",function(){
+        this.play();
+    });
+
+
+    $(".tel img").on("click",function () {
+        console.log(this);
+        $(".tel").toggleClass("openMenu");
+    });
+
+    $(".email img").on("click",function () {
+        console.log(this);
+        $(".email").toggleClass("openMenu");
+    });
 });

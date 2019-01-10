@@ -55,7 +55,14 @@
                 </div>
             </div>
         </header>
-        <span class="tel"><a class="popup-with-form popup-with-zoom-anim"   href="#form" >Заказать звонок</a></span>
+        <span class="tel">
+            <img src="img/tel.png" alt="tel">
+            <a href="tel:+7 (920) 611-61-58">+7 (920) 611-61-58</a>
+        </span>
+        <span class="email">
+            <img src="img/email.png" alt="email">
+            <a href="emailto:info@erga.ru">info@erga.ru</a>
+        </span>
     </div>
 </div>
 
@@ -230,7 +237,71 @@
     </div>
 </div>
 
-<div class="fack"></div>
+<div class="block_five">
+    <div class="container">
+        <h2>ОТРАСЛИ ПРИМЕНЕНИЯ</h2>
+        <div class="box_img">
+            <div class="box">
+                <img src="img/block_five/1.png" alt="">
+                <span>горная</span>
+            </div>
+
+            <div class="box">
+                <img src="img/block_five/2.png" alt="">
+                <span>стекольная</span>
+            </div>
+
+            <div class="box">
+                <img src="img/block_five/3.png" alt="">
+                <span>химическая</span>
+            </div>
+
+            <div class="box">
+                <img src="img/block_five/4.png" alt="">
+                <span>металлургическая</span>
+            </div>
+
+            <div class="box">
+                <img src="img/block_five/5.png" alt="">
+                <span>рициклинг</span>
+            </div>
+
+            <div class="box">
+                <img src="img/block_five/6.png" alt="">
+                <span>пишевая</span>
+            </div>
+
+            <div class="box">
+                <img src="img/block_five/7.png" alt="">
+                <span>строительная</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block_six">
+    <div class="container wrap">
+        <h2>Новости</h2>
+        <div class="box_item">
+            <a href="#"><img src="img/block_six/1.png" alt=""></a>
+            <p>ЭРГА 27 лет с вами!</p>
+            <a class="link" href="#">ПОДРОБНЕЕ </a>
+        </div>
+
+        <div class="box_item">
+            <a href="#"><img src="img/block_six/2.png" alt=""></a>
+            <p>ЭРГА СИБИРЬ - переезд в новый офис</p>
+            <a class="link" href="#">ПОДРОБНЕЕ </a>
+        </div>
+
+        <div class="box_item">
+            <a href="#"><img src="img/block_six/3.png" alt=""></a>
+            <p>НПО ЭРГА на 16-й Международной выставке WASMA-2018</p>
+            <a class="link" href="#">ПОДРОБНЕЕ </a>
+        </div>
+    </div>
+</div>
+
 <?php require_once "footer.php"?>
 
 <script src="js/jquery.scrollify.js"></script>

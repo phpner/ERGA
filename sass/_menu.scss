@@ -86,8 +86,10 @@
   width: 100%;
 }
 .opener1{
-  display: block!important;
-  position: fixed!important;
+  position: fixed !important;
+  opacity: 1!important;
+  transition: opacity .8s!important;
+  z-index: 10000!important;
 
 }
 #nav-icon.open span:nth-child(2) {
@@ -145,8 +147,9 @@
   bottom: 0;
   background: url("../img/bluer.jpg")0 0 no-repeat;
   background-size: cover;
-  z-index: 10000;
-  display: none;
+  z-index: -10000;
+  opacity: 0;
+  transition: all .5s;
 }
 
 .nav-icon-line_absol{
