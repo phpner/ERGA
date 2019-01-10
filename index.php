@@ -17,8 +17,42 @@
         <header>
             <?php require_once "menu_top.php"?>
             <div class="headerSlider">
-                <div class="item"><img src="img/slider/slide1.png" alt=""></div>
-                <div class="item"><img src="img/slider/slide2.png" alt=""></div>
+                <div class="item">
+                    <span class="text_sider">МАГНИТНЫЕ СЕПАРАТОРЫ <br>И ЖЕЛЕЗООТЖЕЛИТЕЛИ</span>
+                    <div class="crug">
+                        <div class="boxIn">
+                            <span class="in_grug">
+                                c <b>1996</b>
+                                года
+                            </span>
+                            <span>выпускаем</span>
+                        </div>
+
+                        <div class="boxIn">
+                            <span class="in_grug">
+                                Более <br>
+                                <b>6000</b>
+                                шт
+                            </span>
+                            <span>поставленно</span>
+                        </div>
+
+                        <div class="boxIn">
+                            <span class="in_grug">
+                                более <br>
+                                <b>60</b>
+                                моделей
+                            </span>
+                            <span>выпускаем</span>
+                        </div>
+                    </div>
+                    <img src="img/slider/slide1.png" alt="">
+                </div>
+                  <!--item-->
+                <div class="item">
+                    <span class="text_sider">МАГНИТНЫЕ СЕПАРАТОРЫ <br>И ЖЕЛЕЗООТЖЕЛИТЕЛИ</span>
+                    <img src="img/slider/slide2.png" alt="">
+                </div>
             </div>
         </header>
         <span class="tel"><a class="popup-with-form popup-with-zoom-anim"   href="#form" >Заказать звонок</a></span>
@@ -89,31 +123,31 @@
             <span>ERGUARD</span>
         </a>
 
-        <a href="#" class="box_animation four">
+        <a href="#" class="box_animation four"  data-img-bg="img/block_three/armat.png">
             <div class="border"></div>
             <span>Армаг</span>
         </a>
-        <a href="#" class="box_animation five">
+        <a href="#" class="box_animation five" data-img-bg="img/block_three/line.png">
             <div class="border"></div>
             <span>Линии</span>
         </a>
 
-        <a href="#" class="box_animation six">
+        <a href="#" class="box_animation six" data-img-bg="img/block_three/lab_eng.png">
             <div class="border"></div>
             <span>Лабораторное <br> оборудование</span>
         </a>
 
-        <a href="#" class="box_animation seven">
+        <a href="#" class="box_animation seven" data-img-bg="img/block_three/velma.png">
             <div class="border"></div>
             <span>Вэлма</span>
         </a>
 
-        <a href="#" class="box_animation eight">
+        <a href="#" class="box_animation eight" data-img-bg="img/block_three/mag_s.png">
             <div class="border"></div>
             <span>Магнитные системы</span>
         </a>
 
-        <a href="#" class="box_animation nine">
+        <a href="#" class="box_animation nine" data-img-bg="img/block_three/dop_oporud.png">
             <div class="border"></div>
             <span>Доп. Оборудование</span>
         </a>
@@ -177,19 +211,31 @@
     $(".block_three").mouseover(function(event){
 
         var imgIn = $(event.target).parent('a').attr('data-img-bg');
+        $(event.target).hasClass('bg_over') != "" ? $('.block_three').css('background','#182c4f') : $('.block_three').css('background','');
 
         $(".bg_over").css("background","url("+imgIn+")")
             .addClass('pulse')
             .addClass('animated');
 
-        console.log(imgIn);
+
     });
+
+    $(".block_three").mouseleave(function(event){
+
+        if($(event.target).hasClass('bg_over')) {
+            $('.block_three').css('background', '');
+
+        }
+    });
+
+
 
     $(".block_three .box_animation").mouseleave(function() {
         var imgIn = $(event.target).parent('a').attr('data-img-bg');
             $(".bg_over").css("background","")
                 .removeClass('pulse')
                 .removeClass('animated');
+
         });
 
     $('.headerSlider').slick({

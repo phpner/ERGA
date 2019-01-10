@@ -79,7 +79,7 @@ h2{
 }
 
 .container{
-  max-width: 1500px;
+  max-width: 1200px;
   padding: 30px;
   margin: auto;
   left: 0;
@@ -113,6 +113,55 @@ header{
   width: 100vw;
   height: 850px;
   position: relative;
+}
+
+.headerSlider .item .text_sider{
+  font-family: CyrMedium,Arial;
+  font-size: 3.4rem;
+  color: $white;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 1150px;
+  margin: auto;
+  transform: translate(-50%);
+
+}
+
+.headerSlider .item .crug{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 1150px;
+  margin: auto;
+  transform: translate(-50%);
+  display: flex;
+}
+.headerSlider .item .crug .boxIn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 60px;
+}
+.headerSlider .item .crug .in_grug{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90px;
+  height: 90px;
+  background: #a80000;
+  border-radius:50%;
+  padding: 30px;
+  text-align: center;
+  color: $white;
+  font-family: CyrMedium,Arial;
+}
+.headerSlider .item .crug .in_grug b{
+  font-weight: 900;
+  font-family: CyrBlack,Arial;
 }
 .headerSlider img {
   width: 100%;
@@ -201,7 +250,7 @@ header{
 
 
 .box_animation{
-  width: 27.14rem;
+  flex-basis: 31%;
   height: 17.14rem;
   background: #182c4f;
   margin: .4rem;
