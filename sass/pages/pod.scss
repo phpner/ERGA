@@ -1,0 +1,135 @@
+.pod_section_one .wrap{
+  display: flex;
+  padding: 60px 0;
+}
+
+.pod_section_one .block_in_text h2{
+  color: $blue;
+  margin-bottom: 37px;
+  font-family: CyrMedium,Arial;
+}
+
+.pod_section_one .block_in_text b{
+  margin-bottom: 37px;
+  display: block;
+  font-family: CyrRoma,Arial;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.pod_section_one .block_in_text p{
+  font-family: CyrRoma,Arial;
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-left: 25px;
+}
+
+.pod_section_one .block_in_text span{
+  font-family: CyrMedium,Arial;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 15px;
+
+}
+
+.pod_section_one .block_in_img{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.pod_section_one .block_in_img .box_img img{
+  margin-right: 10px;
+}
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .pod_section_one .wrap {
+    padding: 10px 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pod_section_one .block_in_text{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .pod_section_one .block_in_text b, .pod_section_one .block_in_text h2{
+    text-align: center;
+  }
+
+  .pod_section_one .block_in_img .box_img{
+    margin-top: 30px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+
+@media only screen and (max-width : 600px) {
+  .pod_section_one .block_in_img .res{
+    width: 100%;
+  }
+  .pod_section_one .block_in_img .box_img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .pod_section_one .block_in_text b,.pod_section_one .block_in_text p, .pod_section_one .block_in_text span{
+    font-size: 1rem;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

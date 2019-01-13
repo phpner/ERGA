@@ -3,19 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
 	<title>ЭРГА</title>
     <link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body class="pageWrapper">
+
 <!--Form-->
 <?php require_once "form.php"?>
-<div id="answers"><span>Спасибо! Я Вам скоро отвечу!</span></div>
 
 <div class="pane-container">
-    <div class="pane paneOne" id="product">
-        <header>
+    <div class="pane paneOne">
+        <header class="header_page_main">
+            <div class="bg_wight">
+                <div class="top_header container mainPage">
+
+                    <img class="logo pc" src="img/logo.png" alt="">
+
+                    <img class="logo mob" src="img/logo_mob.png" alt="">
             <?php require_once "menu_top.php"?>
+                </div>
+            </div>
             <div class="headerSlider">
                 <div class="item">
                     <span class="text_sider">МАГНИТНЫЕ СЕПАРАТОРЫ <br>И ЖЕЛЕЗООТЖЕЛИТЕЛИ</span>
@@ -46,18 +55,18 @@
                             <span>выпускаем</span>
                         </div>
                     </div>
-                    <img src="img/slider/slide1.png" alt="">
+                    <img src="img/slider/slide1.jpg" alt="">
                 </div>
                   <!--item-->
                 <div class="item">
                     <span class="text_sider">МАГНИТНЫЕ СЕПАРАТОРЫ <br>И ЖЕЛЕЗООТЖЕЛИТЕЛИ</span>
-                    <img src="img/slider/slide2.png" alt="">
+                    <img src="img/slider/slide2.jpg" alt="">
                 </div>
             </div>
         </header>
         <span class="tel">
             <img src="img/tel.png" alt="tel">
-            <a href="tel:+7 (920) 611-61-58">+7 (920) 611-61-58</a>
+            <a href="tel:+79206116158">+7 (920) 611-61-58</a>
         </span>
         <span class="email">
             <img src="img/email.png" alt="email">
@@ -66,7 +75,7 @@
     </div>
 </div>
 
-<div class="bg">
+<div class="bg" id="company">
     <div class="container wrapper pan_one">
         <h2>О КОМПАНИИ</h2>
         <div class="box">
@@ -87,7 +96,7 @@
     </div>
 </div>
 
-<div class="block_two">
+<div class="block_two" id="uslug">
     <div class="container wrapper">
         <h2>УСЛУГИ</h2>
 
@@ -112,7 +121,7 @@
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container pad" id="product">
 <div class="block_three">
     <div class="bg_over"></div>
         <a href="#" class="box_animation one" data-img-bg="img/block_three/sepatator.png">
@@ -237,7 +246,7 @@
     </div>
 </div>
 
-<div class="block_five">
+<div class="block_five" id="otros">
     <div class="container">
         <h2>ОТРАСЛИ ПРИМЕНЕНИЯ</h2>
         <div class="box_img">
@@ -301,7 +310,19 @@
         </div>
     </div>
 </div>
+<div class=" have_questions pane">
+    <div class="container wrap">
+        <p class="text_one">
+            Остались <br> вопросы?
+        </p>
 
+        <p class="text_two">
+            Менджеры компании с радостью помогут вам, произведут расчет стоимости продукции или услуг, а также подготовят индивидуальное коммерческое предложение.
+        </p>
+
+        <a class="link btn_green popup-with-zoom-anim" href="#form" >Напишите нам</a>
+    </div>
+</div>
 <?php require_once "footer.php"?>
 
 <script src="js/jquery.scrollify.js"></script>
@@ -392,7 +413,6 @@
         infinite: true,
         speed: 300,
         slidesToShow: 1,
-        adaptiveHeight: true
     });
 
 $('.sliderInPage').slick({

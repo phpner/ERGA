@@ -1,3 +1,4 @@
+<div id="answers"><span>Спасибо! Я Вам скоро отвечу!</span></div>
 <form data-effect="mfp-zoom-in" method="post" action="/message.php" class="white-popup zoom-anim-dialog mfp-hide form" id="form">
     <h2>заказать звонок</h2>
 
@@ -8,10 +9,12 @@
     <input id="email" type="text" name="email" placeholder="почта">
 
     <div class="form_grop">
+        <div class="do_you">
         <input name="checkboxb" type="checkbox" id="checkbox" >
         <label for="checkbox"></label>
         <span onclick="$('#checkbox').trigger('click');">Я согласен на передачу и обработку  персональных <br>
             данных, а также на получение  информации обо мне</span>
+        </div>
         <input type="submit" class="btn" value="заказать звонок">
     </div>
 </form>

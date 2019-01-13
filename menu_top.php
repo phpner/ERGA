@@ -1,13 +1,10 @@
-<div class="bg_wight">
-<div class="top_header container">
-    <img class="logo" src="img/logo.png" alt="">
 
     <ul class="top_menu">
-        <li><a class="active" href="#product">О КОМПАНИИ</a></li>
+        <li><a  href="#company">О КОМПАНИИ</a></li>
+        <li><a href="#uslug">УСЛУГИ</a></li>
         <li><a href="#product">ПРОДУКЦИЯ</a></li>
         <li><a href="#otros">ОТРАСЛИ</a></li>
         <li><a href="#contact">КОНТАКТЫ</a></li>
-        <li><a href="#uslug">УСЛУГИ</a></li>
     </ul>
 
     <div class="nav-icon-line">
@@ -65,7 +62,7 @@
                 <li><a href="#">СМИ о нас</a></li>
             </ul>
         </li>
-        <li><a href="#contact">КОНТАКТЫ</a></li>
+        <li class="clContact"><a class="yesEven" href="#contact">КОНТАКТЫ</a></li>
     </ul>
 
     <div class="nav-icon-line nav-icon-line_absol">
@@ -75,5 +72,3 @@
             <span></span>
             <span></span>
         </div>
-    </div>
-</div>

@@ -1,32 +1,33 @@
 $(document).ready(function ($) {
 
     //------ Menu fixed -------//
+
     var nav = $(".bg_wight");
 
+    var logoPc = $(".logo.pc");
+
+    var logoMob = $(".logo.mob");
    $(window).on('scroll',function () {
        if ($(this).scrollTop() > 100) {
            nav.addClass("f-nav");
-       } else {
-           nav.removeClass("f-nav");
-       }
-   });
-
-    $(window).on('scroll',function () {
-        if ($(this).scrollTop() > 100) {
-           $(".top_header .logo").css('top',"14px");
+           logoPc.fadeOut(0);
+           logoMob.fadeIn();
            $(".top_header ul li a").css({
                color:"#3c3939",
            });
            $(".top_header #nav-icon span").css('background', "#3c3939");
-        } else {
-            $(".top_header .logo").css('top',"");
-            $(".top_header ul li a").css({
-                color: ""
-            });
+       } else {
+           nav.removeClass("f-nav");
+           logoPc.fadeIn();
+           logoMob.fadeOut(0);
+           $(".top_header ul li a").css({
+               color: ""
+           });
 
-            $(".top_header #nav-icon span").css('background', "");
-        }
-    });
+           $(".top_header #nav-icon span").css('background', "");
+       }
+   });
+
     //------ End Menu fixed -------//
 
     //---- Mobail menu ---//
@@ -122,4 +123,49 @@ $(document).ready(function ($) {
         console.log(this);
         $(".email").toggleClass("openMenu");
     });
+
+
+
+    $(".container_hide_menu>ul>li>a").on("click",function (e) {
+        if (!$(this).hasClass("yesEven")) {
+            e.preventDefault();
+        }
+
+        $(this).siblings("ul").toggleClass('openMenuHide');
+        console.log(!$(this).hasClass("yesEven"));
+    });
+
+
+    $(".top_menu").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top -100}, 1500);
+    });
+
+
+    function Scroll_block(){
+        var scroll_top = $(document).scrollTop();
+        $(".top_menu a").each(function(){
+            var hash = $(this).attr("href");
+            var target = $(hash);
+            if ((target.position().top -130) <= scroll_top && (target.position().top -130) + target.outerHeight() > scroll_top) {
+                $(".top_menu li.active").parent().removeClass("active");
+                $(this).parent().addClass("active");
+            } else {
+                $(this).parent().removeClass("active");
+            }
+        });
+    }
+
+
+    $(document).on("scroll", Scroll_block);
+
 });

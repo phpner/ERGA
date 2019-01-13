@@ -16,8 +16,8 @@
 /*----from---*/
 @import "_form.scss";
 
-/*----media---*/
-@import "_media.scss";
+@import "pages/pod.scss";
+
 *{
   margin: 0;
   padding: 0;
@@ -44,6 +44,7 @@ h2{
   align-items: center;
   height: 60px;
   transition: all .5s;
+  z-index: 9998;
 }
 
 .tel{
@@ -73,6 +74,9 @@ h2{
   font-size: 1.4rem;
 }
 
+.pan_one, .pad, .block_six{
+  padding: 70px 0!important;
+}
 .openMenu{
   right: 0!important;
   transition: all .8s;
@@ -85,7 +89,7 @@ h2{
   position: fixed !important;
   z-index: 999;
   height: 114px;
-  background: #f7fdff;
+  background: #f7fdff!important;
   overflow: hidden;
   box-shadow: 0px 4px 7px 1px rgba(146, 146, 146, 0.33);
   width: 100%;
@@ -132,15 +136,20 @@ h2{
 }
 header{
   position: relative;
+  z-index: 9999;
+}
+.header_page_main{
   min-height: 850px;
 }
-
+.logo.mob{
+  display: none;
+}
 .pane-container{
   height: 850px;
 }
 
 .top_header {
-  position: absolute;
+
   display: flex;
   align-items: center;
 }
@@ -149,6 +158,16 @@ header{
   padding-top: 0;
   padding-bottom: 0;
 }
+
+.top_header.mainPage{
+  position: absolute;
+}
+
+.podves .bg_wight{
+  background: url("../img/podHeader.png")0 0 no-repeat;
+  background-size: cover;
+}
+
 .top_header .logo{
   position: relative;
   z-index: 999;
@@ -217,12 +236,12 @@ header{
   height: 100%;
 }
 .pane{
-  height: 100vh;
-  width: 100%;
+
 }
 
-.top_menu li .active{
-  background: red;
+.top_menu li.active a{
+  background: #f0363c;
+  color: white!important;
   padding: 20px;
 
 }
@@ -253,7 +272,7 @@ header{
 }
 
 .block_two{
-  background: url("../img/bg_serves.png")0 0 no-repeat;
+  background: url("../img/bg_serves.jpg")0 0 no-repeat;
   background-size: cover;
 }
 
@@ -265,6 +284,7 @@ header{
 
 .block_two .wrapper{
   justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .block_two .wrapper .box{
@@ -390,11 +410,11 @@ header{
 .block_four .bg:after{
   content: '';
   height: 100%;
-  width: 420px;
+  width: 300px;
   background: #182c4f;
   position: absolute;
-  right: -190px;
-  transform: skewX(35deg);
+  right: -150px;
+  transform: skewX(16deg);
 }
 
 .block_four .container{
@@ -431,6 +451,7 @@ header{
 
 .block_five .box_img{
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 
@@ -466,7 +487,7 @@ header{
 .block_six .wrap h2{
   color: #285bc1;
   font-size: 2rem;
-  padding: 4rem 0 2rem;
+  padding: 0rem 0 2rem;
   font-family: CyrMedium,Arial;
   text-transform: uppercase;
 }
@@ -504,35 +525,35 @@ header{
  background: $redHover;
 }
 
-.block_seven{
-  background: url("../img/bg_serves.png")0 0 no-repeat;
+.have_questions{
+  background: url("../img/bg_serves.jpg")0 0 no-repeat;
   background-size: cover;
   color: $white;
   padding: 7.14rem 0;
   display: flex;
 }
 
-.block_seven .wrap{
+.have_questions .wrap{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.block_seven .wrap .text_one{
+.have_questions .wrap .text_one{
   font-size: 2.98rem;
   font-family: CyrLight, Arial;
   margin-right: 2.98rem;
   flex-basis: 30%;
 }
 
-.block_seven .wrap .text_two{
+.have_questions .wrap .text_two{
   font-family: CyrLight, Arial;
   margin-right: 2.98rem;
   font-size: 1.4em;
   flex-basis: 45%;
 }
 
-.block_seven .wrap .link{
+.have_questions .wrap .link{
   color: $white;
   font-size: 2rem;
   font-family: CyrLight, Arial;
@@ -544,13 +565,15 @@ header{
   transition: all .5s;
 }
 
-.block_seven .wrap .link:hover{
+.have_questions .wrap .link:hover{
+
   background: rgba(48, 101, 209, 0.43);
 }
 
 footer{
   background: #182c4f;
   color: $white;
+  padding-top: 3.7rem;
 }
 
 footer .wrap{
@@ -640,3 +663,6 @@ footer .box_address .link_social{
   margin-top: 30px;
   display: inline-block;
 }
+
+/*----media---*/
+@import "_media.scss";

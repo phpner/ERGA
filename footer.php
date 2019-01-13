@@ -1,18 +1,4 @@
-<div class="block_seven">
-    <div class="container wrap">
-        <p class="text_one">
-            Остались <br> вопросы?
-        </p>
-
-        <p class="text_two">
-            Менджеры компании с радостью помогут вам, произведут расчет стоимости продукции или услуг, а также подготовят индивидуальное коммерческое предложение.
-        </p>
-
-        <a class="link" href="#">Напишите нам</a>
-    </div>
-</div>
-
-<footer>
+<footer id="contact">
     <div class="container wrap">
         <ul>
             <li><a href="#">Продукция</a></li>
@@ -32,7 +18,7 @@
             <li><a href="#">Наша Калуга</a></li>
             <li><a href="#">Глоссарий</a></li>
         </ul>
-
+        <div class="f100"></div>
         <div class="box_address">
             <div class="addr1">
                 <p>
@@ -42,8 +28,8 @@
 
             <div class="addr2">
                 <p>
-                    <a href="tel:+7 (4842) 922-199">+7 (4842) 922-199</a>
-                    <a href="tel:+7 (4842) 79-42-80">+7 (4842) 79-42-80</a>
+                    <a href="tel:+74842922199">+7 (4842) 922-199</a>
+                    <a href="tel:+74842794280">+7 (4842) 79-42-80</a>
                 </p>
             </div>
 
@@ -52,10 +38,10 @@
                     <a href="mailto:info@erga.ru">info@erga.ru</a>
                 </p>
             </div>
-
+        <div class="link_social_box">
             <a class="link_social" target="_blank" href="https://facebook.com"><img src="img/facebook.png" alt="facebook"></a>
             <a class="link_social" target="_blank" href="https://vk.com"><img src="img/vk.png" alt="vk"></a>
-
+        </div>
         </div>
         
     </div>
