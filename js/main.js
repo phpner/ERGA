@@ -151,21 +151,6 @@ $(document).ready(function ($) {
     });
 
 
-    function Scroll_block(){
-        var scroll_top = $(document).scrollTop();
-        $(".top_menu a").each(function(){
-            var hash = $(this).attr("href");
-            var target = $(hash);
-            if ((target.position().top -130) <= scroll_top && (target.position().top -130) + target.outerHeight() > scroll_top) {
-                $(".top_menu li.active").parent().removeClass("active");
-                $(this).parent().addClass("active");
-            } else {
-                $(this).parent().removeClass("active");
-            }
-        });
-    }
 
-
-    $(document).on("scroll", Scroll_block);
 
 });

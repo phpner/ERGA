@@ -138,6 +138,12 @@ header{
   position: relative;
   z-index: 9999;
 }
+.fade{
+  display: none;
+}
+.show{
+  display: initial;
+}
 .header_page_main{
   min-height: 850px;
 }

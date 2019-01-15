@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<!--Form-->
+<?php require_once "form.php"?>
 <header class="podves">
     <div class="bg_wight">
         <div class="top_header container ">
@@ -69,35 +71,111 @@
         </div>
     </div>
 </section>
-<?php require_once "footer.php"?>
+<secton>
+    <div class="have_questions pane">
+        <div class="container wrap">
+            <p class="text_one">
+                Остались <br> вопросы?
+            </p>
 
+            <p class="text_two">
+                Менджеры компании с радостью помогут вам, произведут расчет стоимости продукции или услуг, а также подготовят индивидуальное коммерческое предложение.
+            </p>
+
+            <a class="link btn_green popup-with-zoom-anim" href="#form" >Напишите нам</a>
+        </div>
+    </div>
+</secton>
+
+<section class="block_tab_panel">
+    <div class="container">
+        <div class="tab_panel">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab"  href="#description" >ОПИСАНИЕ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" href="#photo">ФОТО</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab"  href="#video" >ВИДЕО</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" href="#likeThis" >СОПУТСТВУЮЩИЕ ТОВАРЫ</a>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade" id="description" >
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis deleniti dolor doloremque eius ex excepturi fugit harum, incidunt maiores nemo nostrum nulla obcaecati officiis quia quibusdam unde voluptates. At dignissimos doloremque incidunt ipsam magni nam, nihil nobis numquam, omnis qui quos saepe sequi ut! Aliquam eligendi nam nihil omnis, quaerat quis sunt! Accusantium commodi dicta eaque error, eum ex explicabo hic id ipsum, laborum libero minima molestiae natus odio optio possimus, provident ratione saepe tempore veritatis vero voluptate voluptatum. A ad aliquam assumenda autem beatae blanditiis dicta dolorem dolores ducimus earum eius eligendi eos exercitationem facere facilis id illum incidunt ipsa ipsum minima minus modi molestiae neque non numquam odit omnis praesentium quaerat, quia quibusdam rerum sequi sunt suscipit ullam vel voluptas voluptates? Commodi eum minus nihil quaerat. Ad, commodi corporis est exercitationem expedita illo impedit itaque iure minus molestiae molestias mollitia, nobis numquam optio pariatur quaerat quisquam repudiandae sit suscipit ullam unde vel vero voluptate. A amet consectetur, cum delectus dignissimos doloribus dolorum earum eligendi ex excepturi illum laudantium maxime minus modi molestiae molestias mollitia nisi non obcaecati officia pariatur perferendis perspiciatis quos rerum sed vitae voluptas voluptates? Amet eum labore nemo nisi officia quasi, quisquam rerum vero.
+                </div>
+                <div class="tab-pane tab_photo fade show" id="photo" >
+                    <div class="tab_flex">
+                        <div class="slider_photo">
+                            <div class="item">
+                                <a class="image-popup-no-margins"  href="img/page_pod/1.png"><img src="img/page_pod/1.png" alt=""></a>
+                            </div>
+
+                            <div class="item">
+                                <a class="image-popup-no-margins"   href="img/page_pod/2.png"><img src="img/page_pod/2.png" alt=""></a>
+                            </div>
+
+                            <div class="item">
+                                <a class="image-popup-no-margins"   href="img/page_pod/3.png"><img src="img/page_pod/3.png" alt=""></a>
+                            </div>
+
+                            <div class="item">
+                                <a class="image-popup-no-margins"  href="img/page_pod/1.png"><img src="img/page_pod/1.png" alt=""></a>
+                            </div>
+
+                            <div class="item">
+                                <a class="image-popup-no-margins"   href="img/page_pod/2.png"><img src="img/page_pod/2.png" alt=""></a>
+                            </div>
+
+                            <div class="item">
+                                <a class="image-popup-no-margins"   href="img/page_pod/3.png"><img src="img/page_pod/3.png" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="nav_slider">
+                                <div class="item">
+                                    <img src="img/page_pod/1.png" alt="">
+                                </div>
+
+                                <div class="item">
+                                   <img src="img/page_pod/2.png" alt="">
+                                </div>
+
+                                <div class="item">
+                                   <img src="img/page_pod/3.png" alt="">
+                                </div>
+
+                                <div class="item">
+                                    <img src="img/page_pod/1.png" alt="">
+                                </div>
+
+                                <div class="item">
+                                    <img src="img/page_pod/2.png" alt="">
+                                </div>
+
+                                <div class="item">
+                                    <img src="img/page_pod/3.png" alt="">
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade" id="video" >Tad number-3</div>
+                <div class="tab-pane fade" id="likeThis" >Tad number-4</div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<?php require_once "footer.php"?>
 <script>
     $(document).ready(function() {
-        $('.zoom-gallery').magnificPopup({
-            delegate: 'a',
-            type: 'image',
-            closeOnContentClick: false,
-            closeBtnInside: false,
-            mainClass: 'mfp-with-zoom mfp-img-mobile',
-            image: {
-                verticalFit: true,
-                titleSrc: function(item) {
-                    return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
-                }
-            },
-            gallery: {
-                enabled: true
-            },
-            zoom: {
-                enabled: true,
-                duration: 300, // don't foget to change the duration also in CSS
-                opener: function(element) {
-                    return element.find('img');
-                }
-            }
-
-        });
-
 
         $('.image-popup-no-margins').magnificPopup({
             type: 'image',
@@ -112,6 +190,111 @@
                 enabled: true,
                 duration: 300 // don't foget to change the duration also in CSS
             }
+        });
+
+        //=========Slider=========///
+
+        $('.slider_photo').slick({
+            slidesToShow: 1,
+            arrows: false,
+           // asNavFor: '.nav_slider',
+           // vertical: true,
+          //  autoplay: true,
+           // verticalSwiping: true,
+           // centerMode: true,
+            fade: true,
+        });
+
+        $('.nav_slider').slick();
+        fResize();
+        $(window).on('resize orientationchange', function() {
+            fResize();
+        });
+
+        function fResize() {
+            if ($(window).width() <= 768) {
+                $('.nav_slider').slick('unslick');
+                $('.nav_slider').slick({
+                    slidesToShow: 3,
+                    asNavFor: '.slider_photo',
+                    vertical: false,
+                    focusOnSelect: true,
+                    //autoplay: true,
+                    centerMode: true,
+                });
+
+                if ($(window).width() <= 500){
+                    $('.nav_slider').slick('unslick');
+                    $('.nav_slider').slick({
+                        slidesToShow: 2,
+                        asNavFor: '.slider_photo',
+                        vertical: false,
+                        focusOnSelect: true,
+                        autoplay: true,
+                        centerMode: true,
+                    });
+                }
+
+                console.log($(window).width());
+            }else {
+
+                $('.nav_slider').slick('unslick');
+                $('.nav_slider').slick({
+                    slidesToShow: 3,
+                    asNavFor: '.slider_photo',
+                    vertical: true,
+                    focusOnSelect: true,
+                    autoplay: true,
+                    centerMode: true,
+                    daptiveHeight: false,
+
+                });
+
+            }
+
+
+        }
+
+        //==========Tabs========//
+
+        $(".tab_panel").on('click',function(e){
+
+            e.preventDefault();
+
+            var WhoClick = $(e.target).attr("href");
+
+            var tabPanel = $(this).find(".tab-content").find(".tab-pane ");
+
+            var menu = $(this).find(".nav-tabs").find(".nav-link ");
+
+
+            menu.each(function () {
+                if (typeof WhoClick === "undefined") return;
+                $(this).removeClass("active");
+                console.log(WhoClick)
+                var href = $(this).attr('href');
+
+                if (href === WhoClick){
+                    $(this).addClass('active');
+
+                }
+            });
+
+            tabPanel.each(function (i) {
+                var to = $(this).attr("id");
+                if(typeof  WhoClick === "undefined") return;
+                var sliceWho = WhoClick.slice(1);
+                //$(this).removeClass("show");
+                $(this).fadeOut(0);
+                if (to === sliceWho){
+                    $(this).fadeIn(100);
+                   setTimeout(function () {
+                       $(window).trigger('resize');
+                   },120);
+                    // $(this).addClass("show");
+                }
+            })
+
         });
 
     });
