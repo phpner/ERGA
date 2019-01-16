@@ -170,7 +170,7 @@
     </div>
 </div>
 
-<div class="block_four">
+<div class="block_slider_in">
     <div class="bg"></div>
     <div class="container">
         <div class="sliderInPage">

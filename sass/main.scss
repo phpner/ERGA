@@ -402,18 +402,18 @@ header{
   opacity: 1;
 }
 
-.block_four{
+.block_slider_in{
   position: relative;
 }
 
-.block_four .bg{
+.block_slider_in .bg{
   position: absolute;
   width: 60%;
   height: 100%;
   background: #182c4f;
 }
 
-.block_four .bg:after{
+.block_slider_in .bg:after{
   content: '';
   height: 100%;
   width: 300px;
@@ -423,26 +423,26 @@ header{
   transform: skewX(16deg);
 }
 
-.block_four .container{
+.block_slider_in .container{
   padding: 7.14rem 0;
 }
 
-.block_four .sliderInPage .item .box{
+.block_slider_in .sliderInPage .item .box{
   display: flex;
 }
 
-.block_four .sliderInPage .item .text_in_slider{
+.block_slider_in .sliderInPage .item .text_in_slider{
   flex-basis: 50%;
 }
 
-.block_four .sliderInPage .item .text_in_slider h3{
+.block_slider_in .sliderInPage .item .text_in_slider h3{
   color: $white;
   margin-bottom: 60px;
   font-size: 2rem;
   font-family: CyrMedium,Arial;
 }
 
-.block_four .sliderInPage .item .text_in_slider p{
+.block_slider_in .sliderInPage .item .text_in_slider p{
   color: $white;
   font-size: 1.4rem;
   font-family: CyrMedium,Arial;

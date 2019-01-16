@@ -265,9 +265,9 @@
 }
 
 
-// block_four
+// block_slider_in
 
-.block_four .slick-dots li button:before{
+.block_slider_in .slick-dots li button:before{
     font-size: 18px;
     color: #0d3785;
     opacity: 1;
@@ -281,13 +281,13 @@
     color: black;
 }
 
-.block_four .slick-dots li.slick-active button:before{
+.block_slider_in .slick-dots li.slick-active button:before{
     border: 2px solid #0d3785;
     border-radius: 50%;
     color: red;
     opacity: 1;
 }
 
-.block_four .slick-dots{
+.block_slider_in .slick-dots{
     bottom: -198px;
 }

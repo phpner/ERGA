@@ -55,7 +55,7 @@
     width: 130px;
   }
 
-  .block_four .sliderInPage .item .box{
+  .block_slider_in .sliderInPage .item .box{
   flex-flow: column wrap;
   }
   .sliderInPage  .slick-slide img{
@@ -64,17 +64,17 @@
     margin-top: 50px;
   }
 
-  .block_four .bg{
+  .block_slider_in .bg{
     width: 100%;
   }
-  .block_four .bg:after{
+  .block_slider_in .bg:after{
     display: none;
   }
 
-  .block_four .sliderInPage .item .text_in_slider{
+  .block_slider_in .sliderInPage .item .text_in_slider{
     text-align: center;
   }
-  .block_four .container {
+  .block_slider_in .container {
     padding: 4.14rem 0;
   }
 
@@ -394,7 +394,7 @@
     width: 82%;
   }
 
-  .block_four .slick-dots{
+  .block_slider_in .slick-dots{
     bottom: -140px;
   }
 

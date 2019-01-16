@@ -106,10 +106,10 @@
             </ul>
 
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade" id="description" >
+                <div class="tab-pane fade show" id="description" >
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis deleniti dolor doloremque eius ex excepturi fugit harum, incidunt maiores nemo nostrum nulla obcaecati officiis quia quibusdam unde voluptates. At dignissimos doloremque incidunt ipsam magni nam, nihil nobis numquam, omnis qui quos saepe sequi ut! Aliquam eligendi nam nihil omnis, quaerat quis sunt! Accusantium commodi dicta eaque error, eum ex explicabo hic id ipsum, laborum libero minima molestiae natus odio optio possimus, provident ratione saepe tempore veritatis vero voluptate voluptatum. A ad aliquam assumenda autem beatae blanditiis dicta dolorem dolores ducimus earum eius eligendi eos exercitationem facere facilis id illum incidunt ipsa ipsum minima minus modi molestiae neque non numquam odit omnis praesentium quaerat, quia quibusdam rerum sequi sunt suscipit ullam vel voluptas voluptates? Commodi eum minus nihil quaerat. Ad, commodi corporis est exercitationem expedita illo impedit itaque iure minus molestiae molestias mollitia, nobis numquam optio pariatur quaerat quisquam repudiandae sit suscipit ullam unde vel vero voluptate. A amet consectetur, cum delectus dignissimos doloribus dolorum earum eligendi ex excepturi illum laudantium maxime minus modi molestiae molestias mollitia nisi non obcaecati officia pariatur perferendis perspiciatis quos rerum sed vitae voluptas voluptates? Amet eum labore nemo nisi officia quasi, quisquam rerum vero.
                 </div>
-                <div class="tab-pane tab_photo fade show" id="photo" >
+                <div class="tab-pane tab_photo fade " id="photo" >
                     <div class="tab_flex">
                         <div class="slider_photo">
                             <div class="item">
@@ -166,11 +166,66 @@
 
                 </div>
 
-                <div class="tab-pane fade" id="video" >Tad number-3</div>
+                <div class="tab-pane fade" id="video" >
+                    <div class="video_box">
+                        <video width="400" height="300" controls="controls" poster="img/video.png">
+                            <source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            Тег video не поддерживается вашим браузером.
+                            <a href="video/duel.mp4">Скачайте видео</a>.
+                        </video>
+                    </div>
+                </div>
                 <div class="tab-pane fade" id="likeThis" >Tad number-4</div>
 
             </div>
         </div>
+    </div>
+</section>
+<section class="application_industries">
+    <div class="container">
+        <h2>ОТРАСЛИ ПРИМЕНЕНИЯ</h2>
+        <div class="box_items">
+            <div class="item_in">
+                <img src="img/page_pod/application/1.png" alt="Лом">
+                <p>Лом</p>
+            </div>
+
+            <div class="item_in">
+                <img src="img/page_pod/application/2.png" alt="Уголь">
+                <p>Уголь</p>
+            </div>
+
+            <div class="item_in">
+                <img src="img/page_pod/application/3.png" alt="Руда">
+                <p>Руда</p>
+            </div>
+
+            <div class="item_in">
+                <img src="img/page_pod/application/4.png" alt="ПОЛИМЕРНЫЕ РУДЫ">
+                <p>ПОЛИМЕРНЫЕ РУДЫ</p>
+            </div>
+
+            <div class="item_in">
+                <img src="img/page_pod/application/5.png" alt="ЩЕБЕНЬ">
+                <p>ЩЕБЕНЬ</p>
+            </div>
+
+            <div class="item_in">
+                <img src="img/page_pod/application/6.png" alt="ДЕРЕВООБРАБОТКИ">
+                <p>ДЕРЕВООБРАБОТКИ</p>
+            </div>
+
+            <div class="item_in">
+                <img src="img/page_pod/application/7.png" alt="СТЕКЛОБОЙ">
+                <p>СТЕКЛОБОЙ</p>
+            </div>
+
+            <div class="item_in">
+                <img src="img/page_pod/application/8.png" alt="тбо">
+                <p>тбо</p>
+            </div>
+        </div>
+
     </div>
 </section>
 <?php require_once "footer.php"?>
