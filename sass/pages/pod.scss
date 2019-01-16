@@ -204,7 +204,10 @@
   width: 100%;
   height: 100%;
 }
-
+.block_tab_panel{
+  padding-top: 90px;
+  padding-bottom: 130px;
+}
 .application_industries{
   background: #e7eef4;
   padding-top: 90px;
@@ -306,6 +309,11 @@
 
   .application_industries {
     background: #e7eef4;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .block_tab_panel{
     padding-top: 40px;
     padding-bottom: 60px;
   }
@@ -426,6 +434,11 @@
   .application_industries {
     padding-top: 17px;
     padding-bottom: 25px;
+  }
+
+  .block_tab_panel{
+    padding-top: 17px;
+    margin-bottom: 0px;
   }
 }
 

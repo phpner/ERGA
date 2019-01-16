@@ -310,7 +310,7 @@
         </div>
     </div>
 </div>
-<div class=" have_questions pane">
+<div class="have_questions pane">
     <div class="container wrap">
         <p class="text_one">
             Остались <br> вопросы?
