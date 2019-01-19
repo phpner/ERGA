@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:title" content="Фрилансер - Александр" />
+    <meta property="og:title" content="Подвесные железоотделители серии СМПА, -M, -ТМ, -TS" />
 
     <meta name="description" content="Подвесные железоотделители серии СМПА, -M, -ТМ, -TS" />
 
@@ -17,13 +17,22 @@
 <body>
 <!--Form-->
 <?php require_once "form.php"?>
+
+<span class="tel">
+            <img src="img/tel.png" alt="tel">
+            <a href="tel:+79206116158">+7 (920) 611-61-58</a>
+</span>
+<span class="email">
+            <img src="img/email.png" alt="email">
+            <a href="emailto:info@erga.ru">info@erga.ru</a>
+        </span>
 <header class="podves">
     <div class="bg_wight">
         <div class="top_header container ">
 
-            <img class="logo pc" src="img/logo.png" alt="">
+            <a href="/"><img class="logo pc" src="img/logo.png" alt="ЭРГА логотип"></a>
 
-            <img class="logo mob" src="img/logo_mob.png" alt="">
+            <a href="/"><img class="logo mob" src="img/logo_mob.png" alt="ЭРГА логотип"></a>
             <?php require_once "menu_top.php"?>
         </div>
     </div>
@@ -171,7 +180,6 @@
                         <video width="400" height="300" controls="controls" poster="img/video.png">
                             <source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                             Тег video не поддерживается вашим браузером.
-                            <a href="video/duel.mp4">Скачайте видео</a>.
                         </video>
                     </div>
                 </div>
@@ -345,6 +353,7 @@
                     $(this).fadeIn(100);
                    setTimeout(function () {
                        $(window).trigger('resize');
+                       $(".nav_slider .slick-prev").trigger('click');
                    },120);
                     // $(this).addClass("show");
                 }

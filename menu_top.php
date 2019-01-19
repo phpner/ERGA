@@ -25,7 +25,7 @@
     <ul class="top_menu_hide container">
         <li><a href="#product">ПРОДУКЦИЯ</a>
             <ul class="menu_leve_two">
-                <li><a href="#">Сепараторы</a></li>
+                <li><a href="seporator.php">Сепараторы</a></li>
                 <li><a href="#">ЭРГАРД</a></li>
                 <li><a href="#">ВЭЛМА</a></li>
                 <li><a href="#">Магнитные системы</a></li>

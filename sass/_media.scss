@@ -24,11 +24,13 @@
   .headerSlider .item{
     width: 100vw;
     height: 540px;
+    min-height: 540px;
     position: relative;
 
   }
   .pane-container{
     height: 540px;
+    min-height: 540px;
   }
   .header_page_main{
     min-height: 540px;
@@ -306,6 +308,7 @@
   }
   .headerSlider .item,  .pane-container, .header_page_main{
     height: 400px;
+    min-height: 400px;
   }
 
   .headerSlider .item .crug .boxIn{
@@ -470,7 +473,7 @@
   }
 
   .email {
-    top: 71%;
+    top: calc(45% + 70px);
   }
 
   .f-nav{

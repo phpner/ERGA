@@ -19,9 +19,9 @@
             <div class="bg_wight">
                 <div class="top_header container mainPage">
 
-                    <img class="logo pc" src="img/logo.png" alt="">
+                    <a href="/"><img class="logo pc" src="img/logo.png" alt="ЭРГА логотип"></a>
 
-                    <img class="logo mob" src="img/logo_mob.png" alt="">
+                    <a href="/"><img class="logo mob" src="img/logo_mob.png" alt="ЭРГА логотип"></a>
             <?php require_once "menu_top.php"?>
                 </div>
             </div>
@@ -129,7 +129,7 @@
             <span>ПРОДУКЦИЯ</span>
         </a>
 
-        <a href="#" class="box_animation two" data-img-bg="img/block_three/sepatator.png">
+        <a href="seporator.php" class="box_animation two" data-img-bg="img/block_three/sepatator.png">
             <div class="border"></div>
             <span>Сепараторы</span>
         </a>
@@ -308,6 +308,12 @@
             <p>НПО ЭРГА на 16-й Международной выставке WASMA-2018</p>
             <a class="link" href="#">ПОДРОБНЕЕ </a>
         </div>
+
+        <div class="box_item">
+            <a href="#"><img src="img/block_six/1.png" alt=""></a>
+            <p>Участие НПО ЭРГА в выставке АГРОПРОДМАШ-2018</p>
+            <a class="link" href="#">ПОДРОБНЕЕ </a>
+        </div>
     </div>
 </div>
 <div class="have_questions pane">
@@ -384,8 +390,8 @@
         $(event.target).hasClass('bg_over') != "" ? $('.block_three').css('background','#182c4f') : $('.block_three').css('background','');
 
         $(".bg_over").css("background","url("+imgIn+")")
-            .addClass('pulse')
-            .addClass('animated');
+           /* .addClass('pulse')
+            .addClass('animated');*/
 
 
     });
@@ -403,8 +409,8 @@
     $(".block_three .box_animation").mouseleave(function() {
         var imgIn = $(event.target).parent('a').attr('data-img-bg');
             $(".bg_over").css("background","")
-                .removeClass('pulse')
-                .removeClass('animated');
+              /*  .removeClass('pulse')
+                .removeClass('animated');*/
 
         });
 

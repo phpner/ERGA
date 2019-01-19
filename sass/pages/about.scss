@@ -1,0 +1,171 @@
+.pane-about {
+  height: 650px;
+  position: relative;
+}
+
+.pane-about  .header_img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.pane-about  .crug{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(42, 52, 80, 0.74);
+}
+
+.pane-about .crug .wrap{
+  justify-content: space-around;
+  display: flex;
+}
+
+.pane-about .crug .boxIn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 60px;
+  color: $white;
+  font-family: CyrMedium,Arial;
+  text-transform: uppercase;
+}
+.pane-about .crug .in_grug{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  background: $red;
+  border-radius:50%;
+  padding: 30px;
+  text-align: center;
+  color: #fefefe;
+  font-family: CyrMedium,Arial;
+  margin-bottom: 20px;
+}
+.pane-about .crug .in_grug b{
+  font-weight: 900;
+  font-family: CyrRoma ,Arial;
+  display: inline-block;
+  font-size: 28px;
+}
+
+.pane-about .crug .in_grug .fifty{
+  font-size: 48px;
+  margin-top: -5px;
+}
+
+.section_about_about .wrap{
+  margin-top: 100px;
+  margin-bottom: 110px;
+}
+
+.section_about_about .wrap{
+  display: flex;
+}
+
+.section_about_about .wrap .item{
+  width: 50%;
+}
+
+.section_about_about .wrap .item h2{
+  color: $blue;
+  margin-top: 10px;
+  margin-bottom: 22px;
+}
+
+.section_about_about .wrap .item p{
+  font-size: 20px;
+  font-family: CyrRoma;
+}
+
+.section_about_about .wrap .item.video video{
+  width: 100%;
+  height: 400px;
+  margin-left: 25px;
+}
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+  .pane-about {
+    height: 500px;
+    position: relative;
+  }
+
+  .section_about_about .wrap{
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .section_about_about .wrap .item{
+    width: 100%;
+  }
+
+  .section_about_about .wrap .item.video video{
+    margin-left: 0;
+    margin-top: 30px;
+    height: auto;
+  }
+  .section_about_about .wrap {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .section_about_about .wrap .item h2{
+    text-align: center;
+  }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .pane-about {
+    height: 370px;
+  }
+  .pane-about .crug .wrap{
+    align-items: flex-start;
+  }
+
+  .pane-about .crug .boxIn{
+    margin-left: 5px;
+  }
+  .pane-about .crug .in_grug{
+    width: 70px;
+    height: 70px;
+  }
+  .pane-about .crug .in_grug b{
+    font-size: 18px;
+  }
+
+  .pane-about .crug .in_grug .fifty{
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  .pane-about .crug .boxIn{
+    font-size: 10px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
