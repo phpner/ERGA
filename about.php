@@ -142,6 +142,56 @@
     </div>
 </section>
 
+<section class="section_about_text_video">
+    <div class="container wrap">
+        <div class="item img">
+            <a  class="image-popup-no-margins" href="img/about/about_text.png"><img src="img/about/about_text.png" alt="Собственный научно-технический "></a>
+
+        </div>
+
+        <div class="item text">
+            <p>
+                Собственный научно-технический потенциал предприятия и проверенные годами партнёрские отношения с ведущими НИИ, проектными организациями и машиностроительными предприятиями позволяют НПО «ЭРГА» в сжатые сроки разрабатывать эффективные решения сложных инжиниринговых задач, зачастую не имеющие аналогов как в России, так и за её пределами. На счету НПО «ЭРГА» множество достижений в различных областях науки и техники, нашедших практическое применение на тысячах предприятий разных отраслей промышленности. Ведение активной научно-исследовательской деятельности даёт предприятию возможность не только совершенствовать и расширять номенклатуру основной продукции, но и участвовать в уникальных проектах федерального масштаба, в частности, в проектах Федерального космического агентства (РОСКОСМОС) и инновационного центра «Сколково».
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section_about_line">
+    <img src="img/about/bg_line.jpg" alt="ЭРГА">
+</section>
+
+<section class="section_about_history">
+    <div class="container wrap">
+        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1NAeTpTZs1r1S7842YabL1Cueu2FYog7AIsR5uw9aF8o&font=Fjalla-Average&lang=ru&initial_zoom=5&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    </div>
+</section>
+
+<div class="have_questions pane">
+    <div class="container wrap">
+        <p class="text_one">
+            Остались <br> вопросы?
+        </p>
+
+        <p class="text_two">
+            Менджеры компании с радостью помогут вам, произведут расчет стоимости продукции или услуг, а также подготовят индивидуальное коммерческое предложение.
+        </p>
+
+        <a class="link btn_green popup-with-zoom-anim" href="#form" >Напишите нам</a>
+    </div>
+</div>
 <?php require_once "footer.php"?>
+
+<script>
+    $(document).ready(function() {
+        $('iframe#section-sistory').load(function() {
+            var frame = $('iframe#section-sistory').contents();
+
+            frame.find(".tl-headline").css('color','red');
+            console.log(frame.find(".tl-headline"));
+            /* other code */
+        });
+    });
+</script>
 </body>
 </html>
