@@ -97,6 +97,51 @@
 
 </section>
 
+<section class="about_icons">
+
+    <div class="container wrap">
+        <div class="box">
+            <img src="img/about/1.png" alt="ЭРГА с 1991года">
+            <p>Опыт производства <br> более 27 лет!</p>
+        </div>
+
+        <div class="box">
+            <img src="img/about/2.png" alt="ЭРГА Индивидуальный  подход на  всех этапах">
+            <p>Индивидуальный <br>подход на <br>всех этапах</p>
+        </div>
+
+        <div class="box">
+            <img src="img/about/3.png" alt="ЭРГА Конструкторскопроектное решение задач">
+            <p>Конструкторско-<br>
+                проектное<br>
+                решение задач
+            </p>
+        </div>
+
+        <div class="box">
+            <img src="img/about/4.png" alt="ЭРГА Испытательная лаборатория ЛИМиТС ">
+            <p>Испытательная<br>лаборатория<br>ЛИМиТС </p>
+        </div>
+
+        <div class="box">
+            <img src="img/about/5.png" alt="ЭРГА Современное производство ">
+            <p>Современное <br>производство</p>
+        </div>
+
+        <div class="box">
+            <img src="img/about/6.png" alt="ЭРГА Сервис высокого уровня">
+            <p>Сервис высокого <br> уровня</p>
+        </div>
+
+        <div class="box">
+            <img src="img/about/7.png" alt="ЭРГА Ремонт оборудования зарубежных производителей">
+            <p>
+                Ремонт оборудования <br>зарубежных <br>производителей
+            </p>
+        </div>
+    </div>
+</section>
+
 <?php require_once "footer.php"?>
 </body>
 </html>

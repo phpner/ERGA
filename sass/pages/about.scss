@@ -61,8 +61,8 @@
 }
 
 .section_about_about .wrap{
-  margin-top: 100px;
-  margin-bottom: 110px;
+  margin-top: 90px;
+  margin-bottom: 100px;
 }
 
 .section_about_about .wrap{
@@ -88,6 +88,32 @@
   width: 100%;
   height: 400px;
   margin-left: 25px;
+}
+.about_icons{
+  background: url("../img/about/bg_icon.png")35% 0 no-repeat;
+  background-size: 130% 100%;
+  padding-bottom: 110px;
+}
+.about_icons .wrap{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.about_icons .wrap .box{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.about_icons .wrap .box p{
+  color: $white;
+  font-family: CyrRoma,Arial;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 /*==========  Desktop First Method  ==========*/
@@ -158,11 +184,21 @@
   .pane-about .crug .boxIn{
     font-size: 10px;
   }
+  .about_icons {
+    background: url(../img/about/bg_icon.png)0 0 no-repeat;
+    background-size: cover;
+    padding-bottom: 110px;
+  }
+  .about_icons .wrap .box{
+    width: 41%;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+  .about_icons .wrap .box{
+    width: 100%;
+  }
 }
 
 /* Custom, iPhone Retina */
