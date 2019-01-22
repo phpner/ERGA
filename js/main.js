@@ -4,7 +4,7 @@ $(document).ready(function ($) {
 
     var nav = $(".bg_wight");
 
-    var logoPc = $(".logo.pc");
+    var logoPc = $(".logo.pc").parent("a");
 
     var logoMob = $(".logo.mob");
    $(window).on('scroll',function () {
@@ -12,21 +12,30 @@ $(document).ready(function ($) {
            nav.addClass("f-nav");
            logoPc.fadeOut(0);
            logoMob.fadeIn();
-           $(".top_header ul li a").css({
+           $(".top_header ul li a, .block_menu_top .tel-lang button, .block_menu_top .tel-lang a,.block_menu_top .tel-lang #sherch ").css({
                color:"#3c3939",
+               fill:"#3c3939"
            });
+
            $(".top_header #nav-icon span").css('background', "#3c3939");
        } else {
            nav.removeClass("f-nav");
            logoPc.fadeIn();
            logoMob.fadeOut(0);
-           $(".top_header ul li a").css({
-               color: ""
+           $(".top_header ul li a,.block_menu_top .tel-lang button, .block_menu_top .tel-lang a,.block_menu_top .tel-lang a,.block_menu_top .tel-lang #sherch ").css({
+               color: "",
+               fill:""
            });
 
            $(".top_header #nav-icon span").css('background', "");
        }
    });
+
+   //----- Cherch form top-----//
+
+    $(".block_menu_top .tel-lang svg").on("click",function () {
+        $(".block_menu_top .tel-lang  .sherch_in_header").toggleClass('hover-on')
+    });
 
     //------ End Menu fixed -------//
 
@@ -127,28 +136,11 @@ $(document).ready(function ($) {
 
 
     $(".container_hide_menu>ul>li>a").on("click",function (e) {
-        if (!$(this).hasClass("yesEven")) {
-            e.preventDefault();
-        }
+       $(this).siblings("ul").toggleClass('openMenuHide');
 
-        $(this).siblings("ul").toggleClass('openMenuHide');
-        console.log(!$(this).hasClass("yesEven"));
     });
 
 
-    $(".top_menu").on("click","a", function (event) {
-        //отменяем стандартную обработку нажатия по ссылке
-        event.preventDefault();
-
-        //забираем идентификатор бока с атрибута href
-        var id  = $(this).attr('href'),
-
-            //узнаем высоту от начала страницы до блока на который ссылается якорь
-            top = $(id).offset().top;
-
-        //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({scrollTop: top -100}, 1500);
-    });
 
 
     $('.image-popup-no-margins').magnificPopup({

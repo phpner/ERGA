@@ -1,3 +1,60 @@
+.block_menu_top{
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  position: relative;
+  z-index: 9;
+}
+
+.block_menu_top .tel-lang{
+  display: flex;
+  height: 35px;
+  margin-left: auto;
+  align-items: center;
+}
+
+.block_menu_top .tel-lang svg{
+  width: 45px;
+  height: 30px;
+  margin-left: 55px;
+  cursor: pointer;
+}
+
+.block_menu_top .tel-lang button{
+  margin-left: 55px;
+  color: $white;
+  font-family: CyrMedium;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.block_menu_top .tel-lang a{
+  color: $white;
+  font-family: CyrMedium;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.block_menu_top .tel-lang  .sherch_in_header{
+  height: 48px;
+  border: none;
+  width: 0px;
+  border-radius: 15px;
+  position: absolute;
+  right: 50px;
+  transition: width .5s;
+  font-family: CyrMedium,Arial;
+  font-size: 20px;
+  outline: none;
+}
+
+.block_menu_top .tel-lang  .sherch_in_header.hover-on{
+  width: 300px;
+  padding-left: 10px;
+  box-shadow: 0 0 4px 1px #000000;
+}
 .nav-icon-line{
   position: relative;
   display: flex;
@@ -220,5 +277,16 @@
   #nav-icon{
     display: flex;
   }
+  .block_menu_top .tel-lang a{
+    display: none;
+  }
 }
+
+@media only screen and (max-width : 480px){
+  .block_menu_top .tel-lang svg, .block_menu_top .tel-lang button{
+    margin-left: 22px;
+  }
+}
+
+
 

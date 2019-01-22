@@ -29,8 +29,7 @@
 <header class="podves">
     <div class="bg_wight">
         <div class="top_header container ">
-
-            <a href="/"><img class="logo pc" src="img/logo.png" alt="ЭРГА логотип"></a>
+            <a href="/"><img class="logo pc" src="img/logo_in_page.png" alt="ЭРГА логотип"></a>
 
             <a href="/"><img class="logo mob" src="img/logo_mob.png" alt="ЭРГА логотип"></a>
             <?php require_once "menu_top.php"?>
@@ -80,31 +79,17 @@
         </div>
     </div>
 </section>
-<secton>
-    <div class="have_questions pane">
-        <div class="container wrap">
-            <p class="text_one">
-                Остались <br> вопросы?
-            </p>
 
-            <p class="text_two">
-                Менджеры компании с радостью помогут вам, произведут расчет стоимости продукции или услуг, а также подготовят индивидуальное коммерческое предложение.
-            </p>
 
-            <a class="link btn_green popup-with-zoom-anim" href="#form" >Напишите нам</a>
-        </div>
-    </div>
-</secton>
-
-<section class="block_tab_panel">
+<section class="block_tab_panel bg_gray">
     <div class="container">
         <div class="tab_panel">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" id="home-tab"  href="#description" >ОПИСАНИЕ</a>
+                    <a class="nav-link " id="home-tab"  href="#description" >ОПИСАНИЕ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" href="#photo">ФОТО</a>
+                    <a class="nav-link active" id="profile-tab" href="#photo">ФОТО</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="contact-tab"  href="#video" >ВИДЕО</a>
@@ -115,10 +100,10 @@
             </ul>
 
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show" id="description" >
+                <div class="tab-pane fade " id="description" >
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis deleniti dolor doloremque eius ex excepturi fugit harum, incidunt maiores nemo nostrum nulla obcaecati officiis quia quibusdam unde voluptates. At dignissimos doloremque incidunt ipsam magni nam, nihil nobis numquam, omnis qui quos saepe sequi ut! Aliquam eligendi nam nihil omnis, quaerat quis sunt! Accusantium commodi dicta eaque error, eum ex explicabo hic id ipsum, laborum libero minima molestiae natus odio optio possimus, provident ratione saepe tempore veritatis vero voluptate voluptatum. A ad aliquam assumenda autem beatae blanditiis dicta dolorem dolores ducimus earum eius eligendi eos exercitationem facere facilis id illum incidunt ipsa ipsum minima minus modi molestiae neque non numquam odit omnis praesentium quaerat, quia quibusdam rerum sequi sunt suscipit ullam vel voluptas voluptates? Commodi eum minus nihil quaerat. Ad, commodi corporis est exercitationem expedita illo impedit itaque iure minus molestiae molestias mollitia, nobis numquam optio pariatur quaerat quisquam repudiandae sit suscipit ullam unde vel vero voluptate. A amet consectetur, cum delectus dignissimos doloribus dolorum earum eligendi ex excepturi illum laudantium maxime minus modi molestiae molestias mollitia nisi non obcaecati officia pariatur perferendis perspiciatis quos rerum sed vitae voluptas voluptates? Amet eum labore nemo nisi officia quasi, quisquam rerum vero.
                 </div>
-                <div class="tab-pane tab_photo fade " id="photo" >
+                <div class="tab-pane tab_photo fade show" id="photo" >
                     <div class="tab_flex">
                         <div class="slider_photo">
                             <div class="item">
@@ -189,6 +174,23 @@
         </div>
     </div>
 </section>
+
+<secton>
+    <div class="have_questions pane">
+        <div class="container wrap">
+            <p class="text_one">
+                Остались <br> вопросы?
+            </p>
+
+            <p class="text_two">
+                Менджеры компании с радостью помогут вам, произведут расчет стоимости продукции или услуг, а также подготовят индивидуальное коммерческое предложение.
+            </p>
+
+            <a class="link btn_green popup-with-zoom-anim" href="#form" >Напишите нам</a>
+        </div>
+    </div>
+</secton>
+
 <section class="application_industries">
     <div class="container">
         <h2>ОТРАСЛИ ПРИМЕНЕНИЯ</h2>
@@ -239,22 +241,14 @@
 <?php require_once "footer.php"?>
 <script>
     $(document).ready(function() {
-
-
-
         //=========Slider=========///
 
         $('.slider_photo').slick({
             slidesToShow: 1,
-            arrows: false,
-           // asNavFor: '.nav_slider',
-           // vertical: true,
-          //  autoplay: true,
-           // verticalSwiping: true,
-           // centerMode: true,
+            arrows: true,
             fade: true,
+            asNavFor: ".nav_slider"
         });
-
         $('.nav_slider').slick();
         fResize();
         $(window).on('resize orientationchange', function() {
@@ -269,8 +263,8 @@
                     asNavFor: '.slider_photo',
                     vertical: false,
                     focusOnSelect: true,
-                    //autoplay: true,
-                    centerMode: true,
+                    autoplay: true,
+                   centerMode: true,
                 });
 
                 if ($(window).width() <= 500){
@@ -337,11 +331,13 @@
                 //$(this).removeClass("show");
                 $(this).fadeOut(0);
                 if (to === sliceWho){
-                    $(this).fadeIn(100);
+                    $(this).fadeIn(200);
                    setTimeout(function () {
                        $(window).trigger('resize');
-                       $(".nav_slider .slick-prev").trigger('click');
-                   },120);
+                      // $(".nav_slider .slick-next").trigger('click');
+                       $(".slider_photo .slick-next").trigger('click');
+                       console.log('clock!');
+                   },250);
                     // $(this).addClass("show");
                 }
             })

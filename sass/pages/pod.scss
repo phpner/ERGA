@@ -85,7 +85,9 @@
   height: 540px;
 
 }
-
+.slider_photo .slick-prev, .slider_photo .slick-next{
+  display: none!important;
+}
 .slider_photo .item{
   //height: 520px;
 }
@@ -205,13 +207,12 @@
   height: 100%;
 }
 .block_tab_panel{
-  padding-top: 90px;
-  padding-bottom: 130px;
+  padding-top: 50px;
+  padding-bottom: 85px;
 }
 .application_industries{
-  background: #e7eef4;
-  padding-top: 90px;
-  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 85px;
 }
 
 .application_industries h2{

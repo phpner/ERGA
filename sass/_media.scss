@@ -83,6 +83,16 @@
   .f-nav{
     height: 106px;
   }
+
+  .pan_one .box{
+    width: 50%;
+  }
+
+  #company .video_box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -456,6 +466,11 @@
 
   .container_hide_menu .logo{
     width: 73px;
+  }
+
+  #company .video_box{
+    display: initial;
+    width: 100%;
   }
 }
 

@@ -163,7 +163,7 @@
 
 <section class="section_about_history">
     <div class="container wrap">
-        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1NAeTpTZs1r1S7842YabL1Cueu2FYog7AIsR5uw9aF8o&font=Fjalla-Average&lang=ru&initial_zoom=5&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+        <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1NAeTpTZs1r1S7842YabL1Cueu2FYog7AIsR5uw9aF8o&font=Default&lang=en&initial_zoom=5&height=650' width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
     </div>
 </section>
 

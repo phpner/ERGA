@@ -384,6 +384,33 @@
         }
     });*/
 
+$(window).load(function () {
+    $(".top_menu a")[0].href = "#company";
+    $(".top_menu a")[1].href = "#uslug";
+    $(".top_menu a")[2].href = "#product";
+    $(".top_menu a")[3].href = "#otros";
+    $(".top_menu a")[4].href = "#contact";
+});
+
+$(window).ready(function () {
+
+
+
+    $(".top_menu").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'),
+
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top -100}, 1500);
+    });
+
+
     $(".block_three").mouseover(function(event){
 
         var imgIn = $(event.target).parent('a').attr('data-img-bg');
@@ -446,6 +473,8 @@ function Scroll_block(){
 
 
 $(document).on("scroll", Scroll_block);
+});
+
 </script>
 </body>
 </html>

@@ -47,6 +47,11 @@ h2{
   flex: 100%;
 }
 
+
+.bg_gray{
+  background: #e7eef4;
+}
+
 .email ,.tel {
   position: fixed;
   right: -250px;
@@ -280,7 +285,7 @@ header{
   justify-content: space-between;
 }
 .pan_one .box{
-  width: 50%;
+  width: 63%;
   padding: 30px 30px 0 0;
   font-size: 1.2rem;
   font-family: CyrRoma;

@@ -255,7 +255,12 @@
     margin-top: 35px;
   }
 
-
+  .section_about_line{
+    overflow: hidden;
+  }
+  .section_about_line img {
+    width: 252%;
+  }
 }
 
 /* Custom, iPhone Retina */
