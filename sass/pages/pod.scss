@@ -210,6 +210,18 @@
   padding-top: 50px;
   padding-bottom: 85px;
 }
+
+.mfp-content .video_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.mfp-content .video_box iframe{
+  margin-bottom: 30px;
+}
 .application_industries{
   padding-top: 50px;
   padding-bottom: 85px;
@@ -261,6 +273,15 @@
 
 }
 
+.no-over-flow{
+  height: 100%;
+  width: 50% !important;
+  overflow-y: scroll;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  background: #f9f9f9;
+}
 
 /*==========  Desktop First Method  ==========*/
 
@@ -318,6 +339,24 @@
   .block_tab_panel{
     padding-top: 40px;
     padding-bottom: 60px;
+  }
+
+  .no-over-flow{
+    width: 90%!important;
+  }
+
+  .no-over-flow .video_box iframe{
+    width: 95%!important;
+    height: auto!important;
+    min-height: 350px;
+  }
+
+  .no-over-flow  .mfp-close{
+    background: #e28383;
+    box-shadow: 0 0 5px 4px white;
+    right: 20px;
+    top: 20px;
+    position: fixed;
   }
 }
 
@@ -389,7 +428,9 @@
     margin-left: 10px;
   }
 
-
+  .no-over-flow{
+    width: 100%!important;
+  }
 }
 
 
@@ -437,10 +478,26 @@
     padding-top: 17px;
     padding-bottom: 25px;
   }
-
   .block_tab_panel{
     padding-top: 17px;
     margin-bottom: 0px;
+    padding-bottom: 11px;
+  }
+
+  .block_tab_panel .mfp-hide {
+    display: flex !important;
+  }
+
+
+  .block_tab_panel #open-video{
+   display: none;
+  }
+
+  .block_tab_panel .mfp-hide .video_box iframe{
+    width: 90% !important;
+    margin: auto;
+    height: auto;
+    margin-bottom: 20px;
   }
 }
 

@@ -161,12 +161,17 @@
                 </div>
 
                 <div class="tab-pane fade" id="video" >
-                    <div class="video_box">
-                        <video width="400" height="300" controls="controls" poster="img/video.png">
-                            <source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                            Тег video не поддерживается вашим браузером.
-                        </video>
+
+                    <a id="open-video" class="link btn_green popup-with-zoom-anim" href="#video-popup"><img src="img/video.png" alt=""></a>
+                    <div id="video-popup" data-effect="mfp-zoom-in" class="white-popup zoom-anim-dialog mfp-hide">
+                        <div class="video_box">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/jUKE6_Z44Oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/jUKE6_Z44Oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/jUKE6_Z44Oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
+
+
                 </div>
                 <div class="tab-pane fade" id="likeThis" >Tad number-4</div>
 
@@ -311,22 +316,26 @@
 
             var menu = $(this).find(".nav-tabs").find(".nav-link ");
 
+            var clickK = this;
+
 
             menu.each(function () {
-                if (typeof WhoClick === "undefined") return;
+                if (typeof WhoClick === "undefined" || WhoClick === "#video-popup") return;
                 $(this).removeClass("active");
-                console.log(WhoClick)
+
                 var href = $(this).attr('href');
 
-                if (href === WhoClick){
+                if (href === WhoClick && $(this).hasClass('nav-link')){
+                    if(!$(this).hasClass("nav-link")) return;
                     $(this).addClass('active');
-
                 }
+
             });
 
             tabPanel.each(function (i) {
                 var to = $(this).attr("id");
-                if(typeof  WhoClick === "undefined") return;
+                if(typeof  WhoClick === "undefined" || WhoClick === "#video-popup" ) return;
+                //console.log($(this).hasClass("tab-pane"));
                 var sliceWho = WhoClick.slice(1);
                 //$(this).removeClass("show");
                 $(this).fadeOut(0);
@@ -336,13 +345,18 @@
                        $(window).trigger('resize');
                       // $(".nav_slider .slick-next").trigger('click');
                        $(".slider_photo .slick-next").trigger('click');
-                       console.log('clock!');
                    },250);
                     // $(this).addClass("show");
                 }
             })
 
         });
+
+        $(document).on("click","#open-video",function () {
+            $("#video-popup").parent('.mfp-content').addClass('no-over-flow');
+            console.log(this);
+        });
+        console.log($.magnificPopup.instance)
 
     });
 </script>

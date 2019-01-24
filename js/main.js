@@ -74,7 +74,15 @@ $(document).ready(function ($) {
 
         midClick: true,
         removalDelay: 300,
-        mainClass: 'my-mfp-zoom-in'
+        mainClass: 'my-mfp-zoom-in',
+        callbacks: {
+            beforeOpen: function() {
+                jQuery('body').css('overflow', 'hidden');
+            },
+            beforeClose: function() {
+                jQuery('body').css('overflow', 'auto');
+            }
+        }
     });
 
     //--- End From --//
