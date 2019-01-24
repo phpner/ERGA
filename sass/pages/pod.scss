@@ -283,6 +283,28 @@
   background: #f9f9f9;
 }
 
+.block_tab_panel .video_box{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.block_tab_panel .video_box a{
+  width: 33%;
+}
+
+.block_tab_panel .video_box img{
+  width: 100%;
+  height: auto;
+}
+
+.mfp-fade-video{
+  background: none!important;
+}
+.mfp-fade-video .mfp-iframe-holder .mfp-close{
+  color: red!important;
+}
+
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
@@ -341,22 +363,26 @@
     padding-bottom: 60px;
   }
 
-  .no-over-flow{
-    width: 90%!important;
+  .mfp-iframe{
+    width: 75%!important;
+    height: 75% !important;
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%,-50%);
   }
 
-  .no-over-flow .video_box iframe{
-    width: 95%!important;
-    height: auto!important;
-    min-height: 350px;
+  .mfp-iframe-holder .mfp-close {
+    right: calc(50% - 44px);
+    top: 18px;
   }
 
-  .no-over-flow  .mfp-close{
-    background: #e28383;
-    box-shadow: 0 0 5px 4px white;
-    right: 20px;
-    top: 20px;
-    position: fixed;
+  .mfp-iframe-holder .mfp-close{
+    width: 35px;
+    background: red;
+    padding-right: 0;
+    text-align: center;
+    top: -44px;
+    color: white;
   }
 }
 
@@ -427,10 +453,14 @@
     margin-top: initial;
     margin-left: 10px;
   }
-
-  .no-over-flow{
-    width: 100%!important;
+  .block_tab_panel .video_box{
+    flex-direction: column;
+    align-items: center;
   }
+  .block_tab_panel .video_box a {
+    width: 95%;
+  }
+
 }
 
 
@@ -478,26 +508,16 @@
     padding-top: 17px;
     padding-bottom: 25px;
   }
+
   .block_tab_panel{
     padding-top: 17px;
     margin-bottom: 0px;
-    padding-bottom: 11px;
   }
 
-  .block_tab_panel .mfp-hide {
-    display: flex !important;
-  }
-
-
-  .block_tab_panel #open-video{
-   display: none;
-  }
-
-  .block_tab_panel .mfp-hide .video_box iframe{
-    width: 90% !important;
-    margin: auto;
-    height: auto;
-    margin-bottom: 20px;
+  .mfp-iframe-holder .mfp-close {
+    right: calc(50% - 23px);
+    top: -15px;
+    height: 36px;
   }
 }
 

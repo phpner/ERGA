@@ -161,18 +161,12 @@
                 </div>
 
                 <div class="tab-pane fade" id="video" >
-
-                    <a id="open-video" class="link btn_green popup-with-zoom-anim" href="#video-popup"><img src="img/video.png" alt=""></a>
-                    <div id="video-popup" data-effect="mfp-zoom-in" class="white-popup zoom-anim-dialog mfp-hide">
                         <div class="video_box">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/jUKE6_Z44Oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/jUKE6_Z44Oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/jUKE6_Z44Oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <a class="popup-youtube video-popup-stop" href="https://www.youtube.com/watch?v=8Ez5RK1U_AA"><img src="img/video.png" alt=""></a>
+                            <a class="popup-youtube video-popup-stop" href="https://www.youtube.com/watch?v=3ehojFElH90"><img src="img/video.png" alt=""></a>
+                           <a class="popup-youtube video-popup-stop" href="https://www.youtube.com/watch?v=7YOLdFRZQ5A"><img src="img/video.png" alt=""></a>
                         </div>
-                    </div>
-
-
-                </div>
+                  </div>
                 <div class="tab-pane fade" id="likeThis" >Tad number-4</div>
 
             </div>
@@ -284,7 +278,6 @@
                     });
                 }
 
-                console.log($(window).width());
             }else {
 
                 $('.nav_slider').slick('unslick');
@@ -300,8 +293,6 @@
                 });
 
             }
-
-
         }
 
         //==========Tabs========//
@@ -312,15 +303,15 @@
 
             var WhoClick = $(e.target).attr("href");
 
+            var targetClick =  $(e.target);
+
             var tabPanel = $(this).find(".tab-content").find(".tab-pane ");
 
             var menu = $(this).find(".nav-tabs").find(".nav-link ");
 
-            var clickK = this;
-
-
             menu.each(function () {
-                if (typeof WhoClick === "undefined" || WhoClick === "#video-popup") return;
+                if (typeof WhoClick === "undefined" || $(targetClick).hasClass("video-popup-stop")) return;
+
                 $(this).removeClass("active");
 
                 var href = $(this).attr('href');
@@ -331,10 +322,9 @@
                 }
 
             });
-
             tabPanel.each(function (i) {
                 var to = $(this).attr("id");
-                if(typeof  WhoClick === "undefined" || WhoClick === "#video-popup" ) return;
+                if(typeof  WhoClick === "undefined" || $(targetClick).hasClass("video-popup-stop")) return;
                 //console.log($(this).hasClass("tab-pane"));
                 var sliceWho = WhoClick.slice(1);
                 //$(this).removeClass("show");
@@ -352,11 +342,14 @@
 
         });
 
-        $(document).on("click","#open-video",function () {
-            $("#video-popup").parent('.mfp-content').addClass('no-over-flow');
-            console.log(this);
-        });
-        console.log($.magnificPopup.instance)
+            $('.popup-youtube').magnificPopup({
+                disableOn: 700,
+                type: 'iframe',
+                mainClass: 'mfp-fade-video',
+                removalDelay: 160,
+                preloader: false,
+                fixedBgPos: true, fixedContentPos: true
+            });
 
     });
 </script>
